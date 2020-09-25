@@ -1,6 +1,9 @@
 {
     "name": "my-mongodb-api",
     "version": 2,
+    "routes": [
+      { "src": "/api(.*)", "dest": "/api/index.js"}
+    ],
     "env": {
       "MONGODB_URI": "@my-mongodb-uri"
     }
