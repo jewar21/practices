@@ -6,5 +6,5 @@ export const WEB = "http://..."
 /*---------------------------------------
                  COLORES
 ---------------------------------------*/
-export const colorPrimary = ""
-export const backgroundColor= ""
+// export const colorPrimary = ""
+export const backgroundColor= "#000"
