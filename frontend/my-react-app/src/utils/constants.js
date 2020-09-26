@@ -1,10 +1,5 @@
 /*---------------------------------------
                  SERVER
 ---------------------------------------*/
-export const WEB = "http://..."
+export const WEB = "http://localhost:3000/api/users"
 
-/*---------------------------------------
-                 COLORES
----------------------------------------*/
-// export const colorPrimary = ""
-export const backgroundColor= "#000"
