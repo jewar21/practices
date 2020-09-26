@@ -16,7 +16,20 @@ router.get('/:id', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-    Users.create(req.body)
+    let max = 999999999, min = 1111111111
+    var num = Math.random() * (max - min) + min
+    num = parseInt(num)
+
+    var json = new Object()
+    
+    json.name = req.body.name
+    json.email = req.body.email
+    json.password = req.body.password
+    json.numero_cuenta = num
+    json.monto = 1000000
+    json.estado = true
+
+    Users.create(json)
     .then(x => res.status(201).send(x))
 })
 
